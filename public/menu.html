@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Latte Lounge</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="/">Latte <span>Lounge</span></a>
+    <nav>
+      <ul>
+        <li><a class="link" href="/">Home</a></li>
+        <li><a class="link active" href="/menu">Menu</a></li>
+        <li><a class="link" href="/about">About</a></li>
+        <li><a class="link" href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="panel">
+      <h1>Our Menu</h1>
+
+      <div class="filters" role="group" aria-label="Filter menu">
+        <button data-category="" class="on">All</button>
+        <button data-category="coffee">Coffee</button>
+        <button data-category="pastry">Pastries</button>
+      </div>
+
+      <div class="grid" id="menu-grid"></div>
+      <p id="status" role="status"></p>
+
+      <p class="tagline">Steaming up some good vibes at the cafe.</p>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Latte Lounge. Steaming up some good vibes at the cafe.</footer>
+  <script src="/js/menu.js"></script>
+</body>
+</html>
